@@ -1,0 +1,31 @@
+* {margin: 0; padding: 0; list-style: none; box-sizing: border-box; text-decoration: none;}
+html,body {width: 100%; height: 100%;}
+.wrap {width: 100%; height: 100%;}
+
+.wrap header {width: 100%; height: 150px; position: relative; top: 0;}
+.wrap header .txt {width: 100%; height: 100px; background: linear-gradient(to right, #3557d5 85%, #2a59d7); text-align: center; line-height: 100px;}
+.wrap header .txt p {color:white; font-size: 24px;}
+.wrap header nav {width: 100%; height: 50px; background: #8e8be6; position: relative}
+.wrap header nav ul {display: flex;}
+.wrap header nav li {margin:0px 3.5%; line-height: 50px;}
+.wrap header nav a{color:white; transition: .3s;}
+.wrap header nav a:hover {color:lightgray;}
+
+.wrap main {width: 100%; height: calc(100% - 220px); position: relative; background: #e5e5e5;}
+.wrap main section {width: 100%; height: 100%; position: relative; padding:20px;}
+.wrap main section > h2 {text-align: center; padding-bottom: 20px;}
+.wrap main section .index-txt > p:first-child {margin-bottom: 10px;}
+
+.wrap main section .table {width: 100%; height: 100%; display: flex; justify-content: center;}
+.wrap main section .join table td { padding:5px 10px; font-size: 18px;}
+.wrap main section .join table td button {width: 70px; height: 30px;}
+
+.wrap main section .lookup, .sales {text-align: center;}
+
+.lookup thead td, .lookup tbody td, .sales thead td, .sales tbody td {padding:0px 15px;}
+.lookup thead td:nth-child(4), .lookup tbody td:nth-child(4) {padding:0px 80px;}
+.lookup tbody td:nth-child(1) {color:blue;}
+
+.wrap footer {width: 100%; height: 70px; background: linear-gradient(to right, #3564b4 60%, #3289bf); text-align: center; line-height: 70px;}
+.wrap footer p {color: white; font-size: 20px;}
+

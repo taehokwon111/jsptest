@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+*{margin: 0;}
+header{width: 100vw;height: 75px;line-height: 75px;text-align: center; background: #0000ff; color: #ffffff}
+
+nav{width: 100vw;height: 30px;line-height: 30px;background: #5757ff; }
+nav a{margin: 0 15px 0 15px;color: #ffffff; text-decoration: none;}
+
+section{width: 100vw; height: 500px}
+section h4{width:100vw; height: 50px; line-height: 50px; text-align: center;}
+section table,tr,td{border: 1px solid black;}
+
+footer{width: 100vw; height: 40px; line-height: 40px; text-align: center; color: #ffffff; background: #4646ff}
+
+
