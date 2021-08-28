@@ -22,7 +22,7 @@
 		String pcode = request.getParameter("pcode");
 		int amount = Integer.parseInt(request.getParameter("amount"));
 		
-		sql = "insert into GOODS_TBL_003 values('"+goods_cd+"','"+goods_nm+"','"+goods_price+"','"+cost+"','"+in_date+"')";
+//		sql = "insert into GOODS_TBL_003 values('"+goods_cd+"','"+goods_nm+"','"+goods_price+"','"+cost+"','"+in_date+"')";
 		dbconnection.Insert(sql);
 		
 		url="addproduct.jsp";
