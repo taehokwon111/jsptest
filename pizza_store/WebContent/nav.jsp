@@ -8,10 +8,10 @@
 </head>
 <body>
 	<nav>
-		<a href="addsales.jsp">매출전표등록</a>
-		<a href="productmanager.jsp">통합매출조회</a>
-		<a href="salesstore.jsp">지점별매출현황</a>
-		<a href="salesstore.jsp">상품별매출현황</a>
+	<a href="#">매출전표등록</a>
+	<a href="index2.jsp">통합매출조회</a>
+	<a href="index4.jsp">지점별매출현황</a>
+	<a href="index3.jsp">상품별매출현황</a>
 		<a href="index.jsp">홈으로</a>
 	</nav>
 </body>

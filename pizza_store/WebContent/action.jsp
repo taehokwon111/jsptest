@@ -1,4 +1,4 @@
-<%@page import="DBPKG.dbconnection"%>
+<%@page import="DBPKG.Dbconnecter"%>
 <%@page import="java.sql.Date"%>
 <%@page import="java.sql.ResultSet"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -13,23 +13,27 @@
 	String sql = "";
 	
 	switch(action){
+	case "add":
+		String a = request.getParameter("test1");
+		String b = request.getParameter("test2");
+		String c = request.getParameter("test3");
+		String d = request.getParameter("test4");
+		String e = request.getParameter("test5");
+		String f = request.getParameter("test6");
 
-	case "addproduct":
 		
-		int saleno = Integer.parseInt(request.getParameter("saleno"));
-		String scode = request.getParameter("scode");
-		Date saledate = request.getParameter("saledate");
-		String pcode = request.getParameter("pcode");
-		int amount = Integer.parseInt(request.getParameter("amount"));
+		sql = "insert into TBL_VOTE_202005 values('"+ a +"', '"+ b +"', '"+ c +"', '"+ d +"', '"+ e +"', '"+ f +"')";
 		
-//		sql = "insert into GOODS_TBL_003 values('"+goods_cd+"','"+goods_nm+"','"+goods_price+"','"+cost+"','"+in_date+"')";
-		dbconnection.Insert(sql);
 		
-		url="addproduct.jsp";
-		msg="저장되었습니다";
+		Dbconnecter.Insert(sql);
+		
+		url="index.jsp";
+		msg= a +", "+ b +", "+ c +", "+ d +", "+ e +", "+ f;
 		break;
-
+	
 	}
+	
+	
 
     
 %>  
